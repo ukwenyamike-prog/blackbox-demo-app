@@ -1,0 +1,17 @@
+name: Deploy Auth
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/auth/**']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/auth
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        run: echo "Deploying auth service"

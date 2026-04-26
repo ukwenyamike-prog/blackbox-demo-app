@@ -1,0 +1,5 @@
+*                   @platform-team
+/src/auth/          @auth-team @jsmith
+/src/payment/       @payment-team @alee
+/src/gateway/       @platform-team @mchen
+/.github/           @platform-team

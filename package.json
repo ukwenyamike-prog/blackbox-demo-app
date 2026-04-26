@@ -1,0 +1,7 @@
+{
+  "name": "blackbox-demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo application for Blackbox incident forensics — Web Summit GitHub Copilot SDK Hackathon 2026",
+  "workspaces": ["src/auth", "src/payment", "src/gateway"]
+}

@@ -1,0 +1,17 @@
+name: Deploy Payment
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/payment/**']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/payment
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        run: echo "Deploying payment service"
